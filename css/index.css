@@ -92,12 +92,16 @@ header {
 footer {
   display: block;
   background-color: #363535;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 footer .inner {
   display : flex;
   align-items: center;
   padding: 30px;
+  /* 높이를 지정하지 않도록 한다. */
 }
 
 footer .logo_img img {
@@ -114,4 +118,5 @@ footer .inner > div:last-child {
   flex: 9;
   color: #fff;
   font-size: 15px;
+  line-height: 170%;
 }
