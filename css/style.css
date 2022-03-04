@@ -22,21 +22,41 @@ a {
 
 .board_wrap {
   width: 1000px;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 .board_title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_form {
+  padding-top: 15px;
+  font-size: 0;
+}
+
+.search_form select {
+  font-size: 1.6rem;
+}
+
+.search_form input {
+  margin-left: 5px;
+  font-size: 1.6rem;
+}
+
+.search_form .hidden {
+  display: none;
 }
 
 .board_title strong {
   font-size: 3rem;
 }
 
-.board_title p {
+/* .board_title p {
   margin-top: 5px;
   font-size: 1.4rem;
-}
+} */
 
 .bt_wrap {
   margin-top: 30px;

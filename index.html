@@ -41,7 +41,18 @@
       <div class="board_wrap">
         <div class="board_title">
           <strong>게시판</strong>
-          <p>게시판의 내용을 확인하세요.</p>
+          <!-- <p>게시판의 내용을 확인하세요.</p> -->
+          <form class="search_form">
+            <label class="hidden">검색분류</label>
+            <select name="search">
+              <option value="title">제목</option>
+              <option value="writer">작성자</option>
+            </select>
+            <label class="hidden">검색어</label>
+            <input type="text" placeholder="검색어 입력" />
+            <input type="submit" value="검색"/>
+
+          </form>
         </div>
 
         <div class="board_list_wrap">
