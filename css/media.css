@@ -42,6 +42,10 @@
     padding: 7px;
   }
 
+  .board_page a.bt {
+    padding: 0;
+  }
+
   .board_page a.num {
     padding: 6px;
   }
