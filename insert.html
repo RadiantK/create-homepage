@@ -43,32 +43,34 @@
         </div>
 
         <div class="board_write_wrap">
-          <div class="board_write">
-            <div class="title">
-              <dl>
-                <dt>제목</dt>
-                <dd><input type="text" placeholder="제목 입력" /></dd>
-              </dl>
-            </div>
-            <div class="info">
-              <dl>
-                <dt>사용자</dt>
-                <dd><input type="text" placeholder="사용자 입력" /></dd>
-              </dl>
-              <dl>
-                <dt>비밀번호</dt>
-                <dd><input type="password" placeholder="비밀번호 입력" /></dd>
-              </dl>
-            </div>
-            <div class="content">
-              <textarea placeholder="내용 입력"></textarea>
-            </div>
-          </div>
-  
-          <div class="bt_wrap">
-            <a href="view.html" class="on">생성</a>
-            <a href="index.html">취소</a>
-          </div>
+          <form action="insert" method="post">
+	          <div class="board_write">
+	            <div class="title">
+	              <dl>
+	                <dt>제목</dt>
+	                <dd><input type="text" name="title" placeholder="제목 입력" /></dd>
+	              </dl>
+	            </div>
+	            <div class="info">
+	              <dl>
+	                <dt>사용자</dt>
+	                <dd><input type="text" name="writer" value="${sessionId}" readonly /></dd>
+	              </dl>
+	             <!--  <dl>
+	                <dt>비밀번호</dt>
+	                <dd><input type="password"  placeholder="비밀번호 입력" /></dd>
+	              </dl> -->
+	            </div>
+	            <div class="content">
+	              <textarea name ="content" placeholder="내용 입력"></textarea>
+	            </div>
+	          </div>
+	
+	          <div class="bt_wrap">
+	            <input class="on" type="submit" value="생성" />
+	            <a href="main">취소</a>
+	          </div>
+          </form>
         </div>
       </div>
     </section>
