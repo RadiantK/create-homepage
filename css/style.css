@@ -45,7 +45,11 @@ a {
   font-size: 1.6rem;
 }
 
-.search_form .hidden {
+.search_form input.words {
+  padding-left: 5px;
+}
+
+.hidden {
   display: none;
 }
 
@@ -64,6 +68,7 @@ a {
   text-align: center;
 }
 
+.bt_wrap input,
 .bt_wrap a {
   display: inline-block;
   min-width: 80px;
@@ -72,6 +77,10 @@ a {
   border: 1px solid #000;
   border-radius: 2px;
   font-size: 1.4rem;
+}
+
+.bt_wrap input {
+  min-width: 100px;
 }
 
 .bt_wrap a:first-child {
@@ -151,12 +160,19 @@ a {
 * page choose
 */
 
+.current_page {
+  float:right;
+  font-size: 1.5rem;
+}
+
 .board_page {
   margin-top: 30px;
   text-align: center;
   font-size: 0;
+  cursor: pointer;
 }
 
+.board_page span,
 .board_page a {
   display: inline-block;
   width: 32px;
@@ -174,8 +190,18 @@ a {
 
 .board_page a.bt {
   font-size: 1.2rem;
-  padding: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
   letter-spacing: -1px;
+}
+
+.board_page span {
+  border: 1px solid #fff;
+}
+
+.board_page span.bt{
+  padding: 5px;
+  border: 1px solid #ddd;
 }
 
 .board_page a.num {
